@@ -1,0 +1,42 @@
+
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FEFAF5;
+  padding: 2rem 6rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__desciption {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  &__operation {
+    display: flex;
+  }
+  &__hours {
+    margin-left: 2.5rem;
+  }
+
+  &__info {
+
+  }
+
+  &__icon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin-top: 1rem;
+
+    &--margin {
+      margin-left: 1rem;
+    }
+  }
+
+
+
+}
