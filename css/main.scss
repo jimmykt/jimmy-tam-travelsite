@@ -1,0 +1,41 @@
+@use './partials/global';
+@use './partials/header';
+@use './partials/colors';
+
+.hero {
+  background-color: colors.$color-background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+
+  &__info { //left side info container
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  &__title {
+    color: colors.$color-primary;
+  }
+
+  &__description {
+
+  }
+  &__button {
+    background-color: colors.$color-accent;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 1.25rem;
+  }
+
+  &__img {
+    margin-right: 3rem;
+    width: 25rem;
+  }
+
+}
+

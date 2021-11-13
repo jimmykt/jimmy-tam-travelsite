@@ -1,0 +1,26 @@
+
+
+
+
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 1rem 0rem;
+  
+  &__title {
+    margin-left: 3rem;
+  }
+
+  &__links {
+    margin-right: 3rem;
+
+  }
+
+  &__site {
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+  }
+
+}
