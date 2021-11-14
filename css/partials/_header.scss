@@ -14,8 +14,9 @@
 
   &__links {
     margin-right: 3rem;
+    display: flex;
+    list-style-type: none;
 
-    
   }
   &__site {
     text-decoration: none;

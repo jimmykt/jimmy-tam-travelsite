@@ -37,6 +37,8 @@ p, div {
 }
 .header__links {
   margin-right: 3rem;
+  display: flex;
+  list-style-type: none;
 }
 .header__site {
   text-decoration: none;
@@ -132,8 +134,9 @@ p, div {
 .recommendations__location {
   margin-left: 2rem;
   max-width: 15rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .recommendations__location-container {
   position: relative;
