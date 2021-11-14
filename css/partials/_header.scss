@@ -6,6 +6,7 @@
   align-items: center;
   margin: 1rem 0rem;
   background-color: #FFFFFF;
+
   &__title {
     margin-left: 3rem;
     font-size: 1.25rem;
@@ -16,8 +17,8 @@
     margin-right: 3rem;
     display: flex;
     list-style-type: none;
-
   }
+
   &__site {
     text-decoration: none;
     color: black;
