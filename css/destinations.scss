@@ -4,36 +4,45 @@
 @use './partials/colors';
 
 
-.container {
-  position: relative;
-}
 
-.content-container {
-  position: relative;
-}
 
-.background-image{
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  max-height:100%;
-  max-width:100%;
-  height:auto;
-}
+
+
 
 .destination {
   display: flex;
-  flex-direction: column;
-  background-color: lightblue;
-  position: relative;
-
+  justify-content: center;
+  background-color: #add8e6;
   width:100vw;
   height:85vh;
-  
+  position: relative;
+
+
+  &__background-image {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    max-height:100%;
+    max-width:100%;
+    height:auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  &__front-info {
+    position: relative;
+  }
+
   &__title {
+    position: relative;
     color: white;
-    margin: 4rem 4rem 1rem 4rem;
+    margin: 4rem 4rem 1rem 0rem;
+    right: 5rem;
   }
 
   &__card-container{
@@ -49,6 +58,7 @@
     flex-direction: column;
     width: fit-content;
     border-radius: .35rem;
+    list-style-type:none;
 
     &__day {
       font-weight: 600;
@@ -66,9 +76,4 @@
       border-radius: .35rem;
     }
   }
-  
-
-
-
-  
 }

@@ -84,15 +84,15 @@ p, div {
   margin-left: 1rem;
 }
 
-.container {
+.destination {
+  display: flex;
+  justify-content: center;
+  background-color: #add8e6;
+  width: 100vw;
+  height: 85vh;
   position: relative;
 }
-
-.content-container {
-  position: relative;
-}
-
-.background-image {
+.destination__background-image {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
@@ -102,18 +102,19 @@ p, div {
   max-width: 100%;
   height: auto;
 }
-
-.destination {
+.destination__content {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
+  justify-content: start;
+}
+.destination__front-info {
   position: relative;
-  width: 100vw;
-  height: 85vh;
 }
 .destination__title {
+  position: relative;
   color: white;
-  margin: 4rem 4rem 1rem 4rem;
+  margin: 4rem 4rem 1rem 0rem;
+  right: 5rem;
 }
 .destination__card-container {
   display: flex;
@@ -130,6 +131,7 @@ p, div {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 0.35rem;
+  list-style-type: none;
 }
 .destination__cards__day {
   font-weight: 600;
