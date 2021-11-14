@@ -1,24 +1,29 @@
+@use './colors';
 
 
 .footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #FEFAF5;
+  background-color: colors.$color-background;
   padding: 2rem 6rem;
 
   &__title {
     margin-bottom: 1rem;
+    color: colors.$color-primary;
+    font-weight: bold;
   }
+
   &__desciption {
     margin-bottom: 0.5rem;
+    color: colors.$color-accent;
+    font-size: .6rem;
   }
-
-
 
   &__operation {
     display: flex;
   }
+
   &__hours {
     margin-left: 2.5rem;
   }
@@ -35,6 +40,7 @@
     &--margin {
       margin-left: 1rem;
     }
+
   }
 
 

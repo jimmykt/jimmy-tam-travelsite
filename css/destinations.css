@@ -76,56 +76,59 @@ p, div {
   margin-left: 1rem;
 }
 
-.hero {
-  background-color: #FEFAF5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0rem;
+.container {
+  position: relative;
 }
-.hero__info {
-  margin-left: 3rem;
-  padding-right: 3rem;
+
+.content-container {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.destination {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 2rem;
+  background-color: lightblue;
+  position: relative;
 }
-.hero__title {
-  color: #335576;
+.destination__title {
+  color: white;
+  margin: 4rem 4rem 1rem 4rem;
 }
-.hero__description {
-  padding-right: 10rem;
+.destination__card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
-.hero__button {
+.destination__cards {
+  background-color: white;
+  margin: 2rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  border-radius: 0.35rem;
+}
+.destination__cards__day {
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-align: center;
+  border-bottom: 0.2rem solid black;
+}
+.destination__cards__todo {
+  background-color: #FEFAF5;
+  margin: 1rem;
+  font-size: 1rem;
   padding: 0.5rem 2rem;
-  color: white;
-  border-radius: 1.25rem;
-  background-color: #DB7A4E;
-}
-.hero__img {
-  margin-right: 3rem;
-  width: 25rem;
-}
-
-.recommendations {
-  margin: 2rem 2rem;
-}
-.recommendations__title {
-  margin-bottom: 2rem;
-  color: #335576;
-}
-.recommendations__pictures {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.recommendations__location {
-  margin-left: 2rem;
-  max-width: 15rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.25);
-}/*# sourceMappingURL=main.css.map */
+  text-align: center;
+  border-radius: 0.35rem;
+}/*# sourceMappingURL=destinations.css.map */

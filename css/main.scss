@@ -12,6 +12,7 @@
 
   &__info { //left side info container
     margin-left: 3rem;
+    padding-right: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -25,12 +26,14 @@
   &__description {
     padding-right: 10rem;
   }
+
   &__button {
-    background-color: colors.$color-accent;
     width: fit-content;
     padding: 0.5rem 2rem;
     color: white;
     border-radius: 1.25rem;
+    background-color: colors.$color-accent;
+
   }
 
   &__img {
@@ -45,6 +48,8 @@
   margin: 2rem 2rem;
   &__title {
     margin-bottom: 2rem;
+    color: colors.$color-primary;
+
   }
   &__pictures {
     display: flex;
