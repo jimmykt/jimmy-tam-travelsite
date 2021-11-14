@@ -119,7 +119,7 @@ p, div {
   border-radius: 0.35rem;
 }
 .destination__cards__day {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.125rem;
   text-align: center;
   border-bottom: 0.2rem solid black;
