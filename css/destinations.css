@@ -43,6 +43,12 @@ p, div {
   color: black;
   margin-right: 1rem;
 }
+.header__site--active {
+  border-bottom: 3px solid #DB7A4E;
+}
+.header__site:hover {
+  border-bottom: 3px solid #DB7A4E;
+}
 
 .footer {
   display: flex;

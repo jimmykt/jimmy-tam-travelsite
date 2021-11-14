@@ -14,12 +14,21 @@
 
   &__links {
     margin-right: 3rem;
-  }
 
+    
+  }
   &__site {
     text-decoration: none;
     color: black;
     margin-right: 1rem;
-  }
 
+    &--active{
+      border-bottom: 3px solid colors.$color-accent;
+    }
+
+    &:hover {
+      border-bottom: 3px solid colors.$color-accent;
+    }
+
+  }
 }
