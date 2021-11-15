@@ -3,7 +3,9 @@
 @use './partials/footer';
 @use './partials/colors';
 
+
 .hero {
+  margin-top: 3.25rem;
   background-color: colors.$color-background;
   display: flex;
   justify-content: space-between;
@@ -21,10 +23,12 @@
 
   &__title {
     color: colors.$color-primary;
+    text-align: left;
   }
 
   &__description {
     padding-right: 10rem;
+    text-align: left;
   }
 
   &__button {
@@ -57,9 +61,10 @@
     align-items: center;
 
   }
+
   &__location {
     margin-left: 2rem;
-    max-width: 15rem;
+    max-width: 16rem;
     border-radius: 5px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -68,6 +73,7 @@
 
   &__location-container {
     position: relative;
+    width: fit-content;
   }
   &__text {
     position: absolute;
@@ -78,8 +84,6 @@
     left: 11rem;
     bottom: 0.85rem;
   }
-
-
 
 
 }

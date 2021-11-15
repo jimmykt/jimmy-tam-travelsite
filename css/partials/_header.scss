@@ -1,15 +1,25 @@
 @use './colors';
 
-.header {
+
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin: 1rem 0rem;
+  margin:0;
   background-color: #FFFFFF;
+  padding: 1rem;
+
+  &__logo{
+    text-decoration: none;
+  }
 
   &__title {
     margin-left: 3rem;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     color: colors.$color-primary;
   }
 
@@ -33,4 +43,5 @@
     }
 
   }
+
 }

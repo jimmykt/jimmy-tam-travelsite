@@ -4,34 +4,32 @@
 @use './partials/colors';
 
 
-
-
-
-
-
 .destination {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #add8e6;
-  width:100vw;
-  height:85vh;
-  position: relative;
+  margin-top: 3.25rem;
+
 
 
   &__background-image {
-    position: absolute;
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover;
-    max-height:100%;
+    max-height: fit-content;
     max-width:100%;
-    height:auto;
+    width:100vw;
+    height:85vh;
+    object-fit: cover;
+
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    position: absolute;
+
   }
 
   &__front-info {
@@ -58,7 +56,7 @@
     flex-direction: column;
     width: fit-content;
     border-radius: .35rem;
-    list-style-type:none;
+    list-style-type: none;
 
     &__day {
       font-weight: 600;
