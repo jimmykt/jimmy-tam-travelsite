@@ -2,7 +2,7 @@
 @use './partials/header';
 @use './partials/footer';
 @use './partials/colors';
-
+@use './partials/mixins';
 
 .destination {
   display: flex;
@@ -11,17 +11,12 @@
   background-color: #add8e6;
   margin-top: 3.25rem;
 
-
-
   &__background-image {
-    min-width: 100%;
-    min-height: 100%;
     max-height: fit-content;
-    max-width:100%;
-    width:100vw;
-    height:85vh;
     object-fit: cover;
-
+    max-width:100%;
+    min-width: 100%;
+    height:85vh;
   }
 
   &__content {
@@ -29,7 +24,6 @@
     flex-direction: column;
     justify-content: start;
     position: absolute;
-
   }
 
   &__front-info {
@@ -48,15 +42,16 @@
     justify-content: center;
     margin-bottom: 5rem;
   }
+
   &__cards {
-    background-color: white;
-    margin: 1rem;
-    padding: .75rem 0.75rem 2.75rem 0.75rem;
+    @include mixins.reset-list;
     display: flex;
     flex-direction: column;
     width: fit-content;
+    background-color: white;
     border-radius: .35rem;
-    list-style-type: none;
+    margin: 1rem;
+    padding: .75rem 0.75rem 2.75rem 0.75rem;
 
     &__day {
       font-weight: 600;
@@ -65,13 +60,14 @@
       border-bottom: 0.2rem solid black;
       margin-bottom: 1rem;
     }
+
     &__todo {
       background-color: colors.$color-background;
-      margin: 0.45rem 0rem;
-      font-size: 1rem;
-      padding: 0.5rem 4rem;
       text-align: center;
+      font-size: 1rem;
       border-radius: .35rem;
+      margin: 0.45rem 0rem;
+      padding: 0.5rem 4rem;
     }
   }
 }

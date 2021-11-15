@@ -4,21 +4,23 @@
 @use './partials/colors';
 
 
+
 .hero {
-  margin-top: 3.25rem;
-  background-color: colors.$color-background;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: colors.$color-background;
   padding: 2rem 0rem;
+  margin-top: 3.25rem;
 
   &__info { //left side info container
-    margin-left: 3rem;
-    padding-right: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 3rem;
+    padding-right: 3rem;
     gap: 2rem;
+
   }
 
   &__title {
@@ -27,65 +29,61 @@
   }
 
   &__description {
-    padding-right: 10rem;
     text-align: left;
+    padding-right: 24rem;
   }
 
   &__button {
     width: fit-content;
-    padding: 0.5rem 2rem;
     color: white;
-    border-radius: 1.25rem;
     background-color: colors.$color-accent;
-
+    border-radius: 1.25rem;
+    padding: 0.5rem 2rem;
   }
 
   &__img {
-    margin-right: 3rem;
     width: 25rem;
+    margin-right: 3rem;
   }
-
 }
+
+
 
 .recommendations {
   margin: 2rem 2rem;
-  &__title {
-    margin-bottom: 2rem;
-    color: colors.$color-primary;
 
+  &__title {
+    color: colors.$color-primary;
+    margin-bottom: 2rem;
   }
 
   &__pictures {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   &__location {
-    margin-left: 2rem;
     max-width: 16rem;
+    margin-left: 2rem;
     border-radius: 5px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
-
   }
 
   &__location-container {
     position: relative;
     width: fit-content;
   }
+
   &__text {
     position: absolute;
     font-weight: bold;
     font-size: 1.2rem;
     color: white;
-
     left: 11rem;
     bottom: 0.85rem;
   }
-
-
 }
 
 

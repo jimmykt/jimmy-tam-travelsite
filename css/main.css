@@ -25,27 +25,30 @@ p, div {
 
 .nav-bar {
   position: fixed;
-  top: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
   background-color: #FFFFFF;
+  margin: 0;
   padding: 1rem;
+  top: 0;
+  width: 100%;
 }
 .nav-bar__logo {
   text-decoration: none;
 }
 .nav-bar__title {
-  margin-left: 3rem;
-  font-size: 1.45rem;
   color: #335576;
+  font-size: 1.45rem;
+  margin-left: 3rem;
 }
 .nav-bar__links {
-  margin-right: 3rem;
   display: flex;
-  list-style-type: none;
+  margin-right: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: black;
 }
 .nav-bar__site {
   text-decoration: none;
@@ -92,19 +95,19 @@ p, div {
 }
 
 .hero {
-  margin-top: 3.25rem;
-  background-color: #FEFAF5;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FEFAF5;
   padding: 2rem 0rem;
+  margin-top: 3.25rem;
 }
 .hero__info {
-  margin-left: 3rem;
-  padding-right: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 3rem;
+  padding-right: 3rem;
   gap: 2rem;
 }
 .hero__title {
@@ -112,29 +115,29 @@ p, div {
   text-align: left;
 }
 .hero__description {
-  padding-right: 10rem;
   text-align: left;
+  padding-right: 24rem;
 }
 .hero__button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem 2rem;
   color: white;
-  border-radius: 1.25rem;
   background-color: #DB7A4E;
+  border-radius: 1.25rem;
+  padding: 0.5rem 2rem;
 }
 .hero__img {
-  margin-right: 3rem;
   width: 25rem;
+  margin-right: 3rem;
 }
 
 .recommendations {
   margin: 2rem 2rem;
 }
 .recommendations__title {
-  margin-bottom: 2rem;
   color: #335576;
+  margin-bottom: 2rem;
 }
 .recommendations__pictures {
   display: flex;
@@ -142,8 +145,8 @@ p, div {
   align-items: center;
 }
 .recommendations__location {
-  margin-left: 2rem;
   max-width: 16rem;
+  margin-left: 2rem;
   border-radius: 5px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
